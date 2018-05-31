@@ -21,9 +21,9 @@ namespace ClassesDemo
 
         }
     }
-    // NEW CLASS
-
-    public class Employee       
+    
+        // NEW CLASS
+        public class Employee       
 
     {
         //ENUM TYPE
@@ -35,29 +35,29 @@ namespace ClassesDemo
         }
 
         //
-        private Rating rating;   // rating is camelCase with lowercase letter
+        private Rating rating;                  // rating is camelCase with lowercase letter
 
         //PROPERTY
-        public double Income { get; set; }   // property of a class- income
+        public double Income { get; set; }      // property of a class- income
         
         //PROPERTY
         public int YearsOfService { get; set; } // property of a class - years of service
 
         //METHOD
-        public void SetRating(Rating rating)   //Create a Method and parse it the enum type rating
+        public void SetRating(Rating rating)    // Create a Method and parse it the enum type rating
         {
-            this.rating = rating;   // why ???
+            this.rating = rating;              // why ???
         }
 
         //METHOD
-        public void CalculateRaise()        //Create a Method which performes some calculations
+        public void CalculateRaise()                  // Create a Method which performes some calculations
         {
-            double baseRaise = Income * .05;        // baseRaise is a field ??
+            double baseRaise = Income * .05;          // baseRaise is a field ??
             double bonus = YearsOfService * 1000;
             Income += baseRaise + bonus;
 
             //SWITCH
-            switch (rating)   // Switch based on the rating
+            switch (rating)                          // Switch based on the rating
 
             {
                 case Rating.poor:
