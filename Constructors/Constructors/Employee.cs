@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Constructors
 {
-    public class Employee
+    public class Employee    //public variable
     {
 
         public int YearsOfService { get; set; }   // property of employee class
